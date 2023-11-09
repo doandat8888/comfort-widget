@@ -1,11 +1,19 @@
-let arrowTop = document.getElementById("arrow-top");
-let arrowDown = document.getElementById("arrow-down");
-let arrowLeft = document.getElementById("arrow-left");
-let arrowRight = document.getElementById("arrow-right");
-let upDownNumberElm = document.getElementById("up-down-number");
-let upDownNumber = upDownNumberElm.innerText;
-let leftRightNumberElm = document.getElementById("left-right-number");
-let leftRightNumber = leftRightNumberElm.innerText;
+let arrowTopLeft = document.getElementById("arrow-top-left");
+let arrowDownLeft = document.getElementById("arrow-down-left");
+let arrowLeftLeft = document.getElementById("arrow-left-left");
+let arrowRightLeft = document.getElementById("arrow-right-left");
+let upDownNumberElmLeft = document.getElementById("up-down-number-left");
+let upDownNumberLeft = upDownNumberElmLeft.innerText;
+let leftRightNumberElmLeft = document.getElementById("left-right-number-left");
+let leftRightNumberLeft = leftRightNumberElmLeft.innerText;
+let arrowTopRight = document.getElementById("arrow-top-right");
+let arrowDownRight = document.getElementById("arrow-down-right");
+let arrowLeftRight = document.getElementById("arrow-left-right");
+let arrowRightRight = document.getElementById("arrow-right-right");
+let upDownNumberElmRight = document.getElementById("up-down-number-right");
+let upDownNumberRight = upDownNumberElmRight.innerText;
+let leftRightNumberElmRight = document.getElementById("left-right-number-right");
+let leftRightNumberRight = leftRightNumberElmRight.innerText;
 let btnsElm = document.querySelectorAll(".btn");
 let comfortOptionsElm = document.querySelectorAll(".comfort-option");
 let toggleShowElm = document.getElementById("toggle-show");
@@ -18,27 +26,50 @@ let temp_value = 1;
 let temperatureElm = document.getElementById("temperature-number");
 
 
-arrowTop.onclick = function() {
-    if(upDownNumber < 10) {
-        upDownNumber++;
-        upDownNumberElm.innerText = upDownNumber;
+arrowTopLeft.onclick = function() {
+    if(upDownNumberLeft < 10) {
+        upDownNumberLeft++;
+        upDownNumberElmLeft.innerText = upDownNumberLeft;
     }
 }
-arrowDown.onclick = function() {
-    if(upDownNumber > 1) {
-        upDownNumber--;
-        upDownNumberElm.innerText = upDownNumber;
+arrowDownLeft.onclick = function() {
+    if(upDownNumberLeft > 1) {
+        upDownNumberLeft--;
+        upDownNumberElmLeft.innerText = upDownNumberLeft;
     }
 }
-arrowLeft.onclick = function() {
-    if(leftRightNumber > 1) {
-        leftRightNumber--;
-        leftRightNumberElm.innerText = leftRightNumber;
+arrowLeftLeft.onclick = function() {
+    if(leftRightNumberLeft > 1) {
+        leftRightNumberLeft--;
+        leftRightNumberElmLeft.innerText = leftRightNumberLeft;
     }
 }
-arrowRight.onclick = function() {
-    leftRightNumber++;
-    leftRightNumberElm.innerText = leftRightNumber;
+arrowRightLeft.onclick = function() {
+    leftRightNumberLeft++;
+    leftRightNumberElmLeft.innerText = leftRightNumberLeft;
+}
+
+arrowTopRight.onclick = function() {
+    if(upDownNumberRight < 10) {
+        upDownNumberRight++;
+        upDownNumberElmRight.innerText = upDownNumberRight;
+    }
+}
+arrowDownRight.onclick = function() {
+    if(upDownNumberRight > 1) {
+        upDownNumberRight--;
+        upDownNumberElmRight.innerText = upDownNumberRight;
+    }
+}
+arrowLeftRight.onclick = function() {
+    if(leftRightNumberRight > 1) {
+        leftRightNumberRight--;
+        leftRightNumberElmRight.innerText = leftRightNumberRight;
+    }
+}
+arrowRightRight.onclick = function() {
+    leftRightNumberRight++;
+    leftRightNumberElmRight.innerText = leftRightNumberRight;
 }
 
 for(let i = 0; i < btnsElm.length; i++) {
