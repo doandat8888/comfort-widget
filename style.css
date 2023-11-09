@@ -1,0 +1,40 @@
+.title {
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.temperature-circle {
+  background: -webkit-linear-gradient(left top, #ffffff, #65fefb, #44cafe, #5e98fc, #2c5eb0);
+  border-radius: 50%;
+}
+
+.temperature {
+  border-radius: 50%;
+  background: #46445A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temperature-txt {
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.top-1 {
+  fill: wheat;
+}
+
+.auto-txt {
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.letter-spacing {
+  letter-spacing: 1px;
+}
+
+.active {
+  color: white !important;
+  fill: #ffffff !important;
+}
